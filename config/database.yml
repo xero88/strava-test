@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+test:
+  <<: *default
+  database: qboard_test
+
+development:
+  <<: *default
+  database: qboard_development
+
+production:
+  <<: *default
+  database: qboard_production
+  username: qboard
+  password: <%= ENV['QBOARD_DATABASE_PASSWORD'] %>
