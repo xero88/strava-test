@@ -33,6 +33,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-bundler'
   gem 'capistrano3-delayed-job'
+  gem 'whenever'
 end
 
 group :test do
