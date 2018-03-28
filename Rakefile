@@ -5,3 +5,4 @@ require_relative 'config/application'
 require 'rom/sql/rake_task'
 
 Rails.application.load_tasks
+
