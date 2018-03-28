@@ -2,7 +2,6 @@ set :user, 'root'
 
 server '54.37.9.188',
        user: fetch(:user),
-       password: 'IDRN3cDi', # TODO NONONONONONONONON
        roles: %w{web app db},
        ssh_options: {forward_agent: true}
 
