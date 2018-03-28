@@ -10,9 +10,3 @@ test:
 development:
   <<: *default
   database: qboard_development
-
-production:
-  <<: *default
-  database: qboard_production
-  username: qboard
-  password: <%= ENV['QBOARD_DATABASE_PASSWORD'] %>
